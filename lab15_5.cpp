@@ -19,6 +19,18 @@ int main(){
 }
 
 void shuffle(int *a,int *b,int *c,int *d){
-
+	
+    for(int i=0;i<10;i++){
+		int random = rand()%4;
+    if (random == 0) {
+        swap(*a,*b);
+    }else if (random == 1){
+		swap(*a,*c);
+    }else if (random == 2){
+        swap(*a,*d);
+    }else {
+        swap(*b,*c);
+    }
+	}
 }
 
