@@ -18,4 +18,16 @@ int main(){
 	return 0;
 }
 
-//Do not modify source code above this line
+void shuffle(int &a,int &b,int &c,int &d){
+	int random = rand() % 4;  
+    
+    if (random == 0) {
+        swap(a, b);
+    } else if (random == 1) {
+		swap(a, c);
+    } else if (random == 2) {
+        swap(a, d);
+    } else {
+        swap(b, c);
+    }
+}
